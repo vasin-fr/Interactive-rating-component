@@ -1,0 +1,68 @@
+@import './index.sass'
+body
+    .App
+        +blockMenu
+        img
+            display: inline-block
+            padding: 1rem
+            background-color: $darkBlue
+            border-radius: 100%
+        h1
+            font-size: 1.5rem
+        p
+            max-width: 350px
+        ul, li
+            list-style: none
+            padding: 0
+        ul
+            margin: 2rem 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            li
+                button
+                    display: inline
+                    color: $white
+                    background-color: $darkBlue
+                    height: 3rem
+                    width: 3rem
+                    border-radius: 100%
+                    border: none
+                    font-size: 1rem
+                    cursor: pointer
+                    transition: 0.2s all
+                    &:hover
+                        color: $white
+                        background-color: $lightGrey
+                        transition: 0.2s all
+                .clicked
+                    background-color: $orange
+                    &:hover
+                        background-color: $orange
+                        box-shadow: 0px 0px 13px $lightGrey
+        button
+            font-family: 'Overpass', sans-serif
+            width: 100%
+            border: none
+            height: 45px
+            font-size: 1rem
+            text-transform: uppercase
+            border-radius: 2rem
+            background-color: $orange
+            transition: 0.2s all
+            color: $white
+            cursor: pointer
+            &:hover
+                color: $orange
+                transition: 0.2s all
+                background-color: $white
+        .error
+            color: $softRed
+            padding-top: 1rem
+            text-align: center
+            span
+                font-size: 1rem
+        .hidden
+            display: none
+
+                    

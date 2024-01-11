@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap')
+
+$orange: hsl(25, 97%, 53%)
+$white: hsl(0, 0%, 100%)
+$lightGrey: hsl(217, 12%, 63%)
+$mediumGrey: hsl(216, 12%, 54%)
+$darkBlue: hsl(213, 19%, 18%)
+$veryDarkBlue: hsl(216, 12%, 8%)
+
+$gradientGreyBlack: hsl(212, 18%, 14%)
+$gradientBlack: hsl(220, 16%, 11%)
+$softRed: hsl(0, 70%, 80%)
+
+=blockMenu
+    background: linear-gradient(to bottom, $gradientGreyBlack, $gradientBlack)
+    padding: 2rem 2rem
+    border-radius: 2rem
+    
+
+body
+    font-family: 'Overpass', sans-serif
+    height: 100vh
+    width: 100vw
+    color: $white
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $veryDarkBlue
+p
+    font-size: 15px
+    color: $lightGrey
+    line-height: 1.5rem
+
+@media screen and (max-width: 437px)
+    body
+        transform: scale(.7)
